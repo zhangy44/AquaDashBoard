@@ -80,57 +80,9 @@
         //     c: 240
         // }], "y", ["a", "b", "c"], ["Series A", "Series B", "Series C"], ["#3db9dc", "#1bb99a", "#ebeff2"]);
 
-        this.createDonutChart("morris-2", [{
-            label: "Fully Disagree",
-            value: 1
-        }, {
-            label: "2",
-            value: 32
-        }, {
-            label: "3",
-            value: 33
-        },{
-            label: "4",
-            value: 68
-        },
-            {
-            label: "Fully Agree",
-            value: 1450
-        }], ["#EBEFF2","#BCEBCB","#87D68D" ,"#1bb99a","#3db9dc" ])
-        this.createDonutChart("morris-bar-stacked", [{
-            label: "Fully Disagree",
-            value: 20
-        }, {
-            label: "2",
-            value: 42
-        }, {
-            label: "3",
-            value: 13
-        },{
-            label: "4",
-            value: 88
-        },
-            {
-                label: "Fully Agree",
-                value: 1250
-        }], ["#EBEFF2","#BCEBCB","#87D68D" ,"#1bb99a","#3db9dc" ])
-        this.createDonutChart("morris-donut-example", [{
-            label: "Fully Disagree",
-            value: 10
-        }, {
-            label: "2",
-            value: 22
-        }, {
-            label: "3",
-            value: 13
-        },{
-            label: "4",
-            value: 48
-        },
-            {
-                label: "Fully Agree",
-                value: 1850
-        }], ["#EBEFF2","#BCEBCB","#87D68D" ,"#1bb99a","#3db9dc" ])
+        this.createDonutChart("morris-2", dataset.chart1, ["#EBEFF2","#BCEBCB","#87D68D" ,"#1bb99a","#3db9dc" ])
+        this.createDonutChart("morris-bar-stacked", dataset.chart2, ["#EBEFF2","#BCEBCB","#87D68D" ,"#1bb99a","#3db9dc" ])
+        this.createDonutChart("morris-donut-example", dataset.chart3, ["#EBEFF2","#BCEBCB","#87D68D" ,"#1bb99a","#3db9dc" ])
     }, a.Dashboard = new e, a.Dashboard.Constructor = e
 }(window.jQuery),
     function(a) {
